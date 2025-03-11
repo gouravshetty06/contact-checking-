@@ -70,7 +70,7 @@ def main():
         elif choice == '5':
             break
         else:
-            print("error")
+            print("Sorry user not found")
 
 
 if __name__ == "__main__":
