@@ -47,8 +47,8 @@ def main():
     while True:
         print("\nContact Book")
         print("1. Add Contact")
-        print("2. View Contacts")
-        print("3. Search Contact")
+        print("2. Search Contact")
+        print("3. View Contacts")
         print("4. Delete Contact")
         print("5. Exit")
 
@@ -60,17 +60,17 @@ def main():
             email = input("Enter email: ")
             add_contact(contacts, name, phone, email)
         elif choice == '2':
-            view_contacts(contacts)
-        elif choice == '3':
             search_term = input("Enter name to search: ")
             search_contact(contacts, search_term)
+        elif choice == '3':
+            view_contacts(contacts)
         elif choice == '4':
             search_term = input("Enter name to delete: ")
             delete_contact(contacts, search_term)
         elif choice == '5':
             break
         else:
-            print("Invalid choice")
+            print("error")
 
 
 if __name__ == "__main__":
