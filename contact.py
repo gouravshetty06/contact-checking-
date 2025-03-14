@@ -62,8 +62,9 @@ def main():
         elif choice == '2':
             search_term = input("Enter name to search: ")
             search_contact(contacts, search_term)
-        elif choice == '3':
             view_contacts(contacts)
+        elif choice == '3':
+            
         elif choice == '4':
             search_term = input("Enter name to delete: ")
             delete_contact(contacts, search_term)
